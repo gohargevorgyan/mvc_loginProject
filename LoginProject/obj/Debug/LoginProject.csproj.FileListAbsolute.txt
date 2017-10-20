@@ -28,3 +28,34 @@ C:\Users\Vardan\gohar-repos\asp\LoginProject\LoginProject\bin\WebGrease.dll
 C:\Users\Vardan\gohar-repos\asp\LoginProject\LoginProject\bin\Antlr3.Runtime.pdb
 C:\Users\Vardan\gohar-repos\asp\LoginProject\LoginProject\bin\Newtonsoft.Json.xml
 C:\Users\Vardan\gohar-repos\asp\LoginProject\LoginProject\bin\System.Web.Optimization.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\LoginProject.dll.config
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\LoginProject.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\LoginProject.pdb
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\Antlr3.Runtime.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\EntityFramework.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\EntityFramework.SqlServer.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\Newtonsoft.Json.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Helpers.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Mvc.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Optimization.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Razor.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Webpages.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Webpages.Razor.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\WebGrease.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\Antlr3.Runtime.pdb
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\EntityFramework.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\EntityFramework.SqlServer.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\Newtonsoft.Json.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Optimization.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Razor.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Webpages.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Webpages.Razor.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Helpers.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\bin\System.Web.Mvc.xml
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\obj\Debug\LoginProject.csprojResolveAssemblyReference.cache
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\obj\Debug\LoginProject.csproj.CoreCompileInputs.cache
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\obj\Debug\LoginProject.dll
+C:\Users\Anas Al Abbadi\source\repos\mvc_loginProject\LoginProject\obj\Debug\LoginProject.pdb

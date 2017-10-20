@@ -10,14 +10,10 @@ namespace LoginProject.Controllers
 {
     public class AccountController : Controller
     {
-        
-        //
-        // GET: /Account/
         public ActionResult Registration()
         {
             return View();
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -52,15 +48,16 @@ namespace LoginProject.Controllers
                 }
             }
 
-
-
             return View (model);
-              
         }
 
         public ActionResult Login()
         {
-            return View();
+            /*if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Home", "Account");
+            }*/
+                return View();
         }
 
         [HttpPost]
@@ -72,44 +69,39 @@ namespace LoginProject.Controllers
                 User user = null;
                 using (UserContext db = new UserContext())
                 {
-                    user = db.Users.FirstOrDefault(u => u.UserName == model.UserName && u.Password == model.Password);
+                    user = db.Users.FirstOrDefault(u => u.UserName == model.UserName);
+                    if (user.Password != model.Password )
+                    {
+                        ModelState.AddModelError("", "Пользователя с таким паролем нет");
+                        return View(model);
+                    }
 
+                    if (user != null)
+                    {
+                        FormsAuthentication.SetAuthCookie(model.UserName, true);
+                        return RedirectToAction("Home", "Account");
+
+                    }
                 }
-
-                if (user != null)
-                {
-
-                   // FormsAuthentication.SetAuthCookie(model.UserName, true);
-                    var userCookie = new HttpCookie("UserName", model.UserName);
-                    userCookie.Expires.AddDays(365); HttpContext.Response.SetCookie(userCookie);
-                    return RedirectToAction("Home", "Account");
-
-                }
-
 
             }
-
             return View(model);
-
         }
-
 
         public ActionResult Home()
         {
-            string val = Request.Cookies["UserName"].Value;
-            ViewBag.val = Request.Cookies["UserName"].Value;
-            return View();
+                ViewBag.val = User.Identity.Name;
+                 return View();
         }
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public string Update(HomePageModel model)
+        
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+        public string Update( HomePageModel model)
         {
             string result = "Вы не авторизованы";
             if (User.Identity.IsAuthenticated)
             {
-                result = "Ваш логин: " + Request.Cookies["UserName"];
+                result = "Ваш логин: " + User.Identity.Name;
             }
             if (!Request.IsAjaxRequest())
             {
@@ -119,31 +111,26 @@ namespace LoginProject.Controllers
 
             if (ModelState.IsValid)
             {
-               
                 using (UserContext db = new UserContext())
                 {
 
                     string val = "";
-                    if (Request.Cookies["UserName"] != null)
+                    if (User.Identity.Name != null)
                     {
-                        val = Request.Cookies["UserName"].Value;
+                        val = User.Identity.Name;
 
-                        var user = db.Users.Where(s=>s.UserName == val).FirstOrDefault<User>();// get student from db
-                        if (user != null)// change user 
+                        var user = db.Users.Where(s=>s.UserName == val).FirstOrDefault<User>();
+                        if (user != null)
                         {
                             user.Name = model.Name;
                             user.Address = model.Address;
-                            //db.Entry(user).State = System.Data.Entity.EntityState.Modified;//Modified
-                            db.SaveChanges();//update
+                           
+                            db.SaveChanges();
 
                         }
-                        
-                       
+                      
                     }
-                
                 }
-               
-
             }
 
             return result;

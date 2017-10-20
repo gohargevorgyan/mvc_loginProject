@@ -8,30 +8,32 @@ namespace LoginProject.Models
 {
     public class RegisterModel
     {
-        [Required]
+    [Required]
         public string UserName {get ; set ; }
-        [Required]
-        [DataType(DataType.Password)]
+    [Required]
+    [DataType(DataType.Password)]
          public string  Password {get ; set ; }
-         [Required]
-         [DataType(DataType.Password)]
-         [Compare("Password", ErrorMessage = "Пароли не совпадают")]
+     [Required]
+     [DataType(DataType.Password)]
+     [Compare("Password", ErrorMessage = "Пароли не совпадают")]
          public string ConfirmPassword  {get ; set ; }
 
     }
         public class LoginModel
     {
-            [Required]
-          public string UserName {get ; set ; }
-            [Required]
-            [DataType(DataType.Password)]
+        [Required]
+             public string UserName {get ; set ; }
+        [Required]
+        [DataType(DataType.Password)]
             public string Password {get ; set ; }
     }
 
         public class HomePageModel {
-             [Required]
-            public string Address { get; set; }
-             [Required]
+        [Required]
+             public string UserName { get; set; }
+        [Required]
+             public string Address { get; set; }
+        [Required]
             public string Name { get; set; }
         
         }
